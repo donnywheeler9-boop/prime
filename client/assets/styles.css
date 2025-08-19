@@ -1,0 +1,87 @@
+/* PrimeStyle theme — inspired by modern panels */
+:root{
+  --primary:#164ed0;
+  --primary-hover:#1240ab;
+  --secondary:#f13870;
+  --text:#202223;
+  --muted:#8c9196;
+  --bg:#ffffff;
+  --card:#ffffff;
+  --border:#e0e0e0;
+  --grad: linear-gradient(92deg, var(--primary) 1.15%, var(--secondary) 123.37%);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',sans-serif;color:var(--text);background:#fff}
+a{color:var(--primary);text-decoration:none}
+a:hover{opacity:.9}
+img{max-width:100%;display:block}
+
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+.header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.logo img{height:36px}
+.nav{display:flex;gap:12px;align-items:center}
+.nav a{padding:10px 14px;border-radius:8px}
+.nav a.active{background:rgba(22,78,208,.08)}
+
+.btn{display:inline-flex;gap:8px;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:700}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-hover)}
+.btn-secondary{background:var(--secondary);color:#fff}
+.btn-outline{border:1px solid var(--border);color:var(--text);background:#fff}
+.btn-gradient{background:var(--grad);color:#fff}
+.btn-full{width:100%}
+.btn-large{padding:16px 24px;font-size:1.05rem;border-radius:14px}
+
+.hero{position:relative;background:radial-gradient(1200px 600px at 60% -20%, rgba(22,78,208,.15), rgba(22,78,208,0));}
+.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;padding:40px 0}
+.hero h1{font-size:48px;line-height:1.1;margin:0 0 12px}
+.lead{font-size:18px;color:#384047;max-width:52ch}
+.hero-cta{display:flex;gap:12px;margin:18px 0 6px}
+.hero-points{list-style:none;padding:0;margin:12px 0 0;color:#2b2f36}
+.hero-visual{display:flex;justify-content:center}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 0 1px rgba(0,0,0,.15), 0 2px 1px rgba(0,0,0,.05)}
+.card.full{grid-column:1/-1}
+.stat{width:100%;max-width:360px}
+.stat-top{display:flex;justify-content:space-between;align-items:center}
+.stat-title{color:var(--muted);font-weight:600}
+.stat-amount{font-weight:700;font-size:28px}
+.stat-chart{height:140px;background:linear-gradient(180deg, rgba(22,78,208,.25), rgba(241,56,112,.15));border-radius:12px;margin:12px 0}
+.stat .tiny{color:var(--muted);font-size:12px}
+
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.trust .trust-item{padding:18px;border:1px dashed var(--border);border-radius:14px;background:#fafbff}
+
+.cta{padding:28px 0 64px}
+.cta-card{display:flex;align-items:center;justify-content:space-between;gap:16px;border-radius:16px;background:linear-gradient(130deg,#fef7f9,#e8edfa)}
+.cta-card h2{font-size:28px;margin:0}
+.cta-card p{margin:0;color:#384047}
+.cta-card .btn{white-space:nowrap}
+
+.footer{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:26px 0;border-top:1px solid var(--border);margin-top:42px}
+.footer-nav{display:flex;gap:12px}
+.tiny{font-size:12px;color:var(--muted)}
+.center{text-align:center}
+.big{font-size:28px;font-weight:700}
+
+.auth-bg{background:
+  radial-gradient(600px 300px at 0% 0%, rgba(22,78,208,.08), transparent),
+  radial-gradient(600px 300px at 100% 0%, rgba(241,56,112,.08), transparent)
+}
+.auth-card{max-width:420px;margin:56px auto;padding:24px;border-radius:18px;border:1px solid var(--border);background:#fff}
+.auth-title{margin:0 0 12px;text-align:center}
+.form{display:grid;gap:12px}
+label{display:grid;gap:6px;font-weight:600}
+input,select{padding:12px 12px;border:1px solid var(--border);border-radius:10px;font:inherit}
+.error{color:#b00020;margin:4px 0}
+.hidden{display:none}
+
+.dash-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:8px}
+@media(min-width:900px){.dash-grid{grid-template-columns:1fr 1fr}}
+.survey-list, .activity-list{display:grid;gap:12px}
+.survey{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--border);border-radius:12px;padding:12px;background:#fff}
+.survey .meta{display:flex;flex-direction:column;gap:2px}
+.survey .meta .title{font-weight:700}
+.survey .meta .tiny{color:var(--muted)}
+.row{display:flex;gap:10px;align-items:center}

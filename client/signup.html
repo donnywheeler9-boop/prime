@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign up | PrimeStyle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css"/>
+  <script defer src="./assets/app.js"></script>
+</head>
+<body class="auth-bg">
+  <div class="auth-card">
+    <a class="logo" href="./"><img src="./assets/logo.svg" alt="Logo"/></a>
+    <h1 class="auth-title">Create your account</h1>
+    <form id="signup-form" class="form">
+      <label>Name
+        <input type="text" name="name" required placeholder="Your name">
+      </label>
+      <label>Email
+        <input type="email" name="email" required placeholder="you@example.com">
+      </label>
+      <label>Password
+        <input type="password" name="password" minlength="6" required placeholder="At least 6 characters">
+      </label>
+      <button class="btn btn-gradient btn-full" type="submit">Sign up</button>
+      <p class="tiny center">Already have an account? <a href="./login.html">Log in</a></p>
+      <p id="signup-error" class="error hidden"></p>
+    </form>
+  </div>
+</body>
+</html>

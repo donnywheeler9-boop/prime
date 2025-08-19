@@ -1,0 +1,5 @@
+<svg width="120" height="36" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="36" height="36" rx="10" fill="#164ed0"/>
+<path d="M10 19c6-8 12-8 18 0" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<text x="44" y="24" font-family="Montserrat, sans-serif" font-size="18" font-weight="700" fill="#164ed0">PrimeStyle</text>
+</svg>

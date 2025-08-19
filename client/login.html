@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log in | PrimeStyle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css"/>
+  <script defer src="./assets/app.js"></script>
+</head>
+<body class="auth-bg">
+  <div class="auth-card">
+    <a class="logo" href="./"><img src="./assets/logo.svg" alt="Logo"/></a>
+    <h1 class="auth-title">Welcome back</h1>
+    <form id="login-form" class="form">
+      <label>Email
+        <input type="email" name="email" required placeholder="you@example.com">
+      </label>
+      <label>Password
+        <input type="password" name="password" required placeholder="••••••••">
+      </label>
+      <button class="btn btn-primary btn-full" type="submit">Log in</button>
+      <p class="tiny center">No account? <a href="./signup.html">Sign up</a></p>
+      <p id="login-error" class="error hidden"></p>
+    </form>
+  </div>
+</body>
+</html>

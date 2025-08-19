@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | PrimeStyle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css"/>
+  <script defer src="./assets/app.js"></script>
+</head>
+<body>
+  <header class="container header">
+    <a class="logo" href="./"><img src="./assets/logo.svg" alt="Logo"/></a>
+    <nav class="nav">
+      <span id="welcome"></span>
+      <a href="#" id="logout" class="btn btn-outline">Log out</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="dash-grid">
+      <div class="card">
+        <h2>Your balance</h2>
+        <p class="big" id="balance">$0.00</p>
+        <div class="row">
+          <a class="btn btn-secondary" id="btn-payout" href="#">Request payout</a>
+        </div>
+      </div>
+      <div class="card full">
+        <h2>Available surveys</h2>
+        <div id="surveys" class="survey-list"></div>
+      </div>
+      <div class="card full">
+        <h2>Recent activity</h2>
+        <div id="activity" class="activity-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> PrimeStyle</p>
+  </footer>
+</body>
+</html>
